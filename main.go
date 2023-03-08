@@ -16,6 +16,7 @@ type task struct{
 	Content string `json:Content`
 }
 
+
 func getTasks(w http.ResponseWriter, r *http.Request){
 	w.Header().Set("Content-Type", "application/json");
 	json.NewEncoder(w).Encode(tasks)
